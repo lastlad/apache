@@ -1,6 +1,9 @@
 <html>
-<h1>Hello World!!</h1><br>
-Hostname  : <%= node['hostname'] %><br>
-IpAddress : <%= node['ipaddress'] %><br>
-Name      : <%= @name %>
+  <body>
+    <h1>Hello World!!</h1><br>
+       Hostname  : <%= node['hostname'] %>
+       IpAddress : <%= node['ipaddress'] %>
+       Name      : <%= @name %>
+       Memory    : <%= node['memory']['total'] %>
+  </body>
 </html>
